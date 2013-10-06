@@ -37,6 +37,10 @@
   }else{
     humanAge = [self.humanAge.text intValue];
     if (humanAge > 2) {
+      
+      // 10.5 years per human years for the first 2 years and 4 years for the rest
+      // for instance 3 human years = (21 + ((3 - 2) * 4)) = 25 dog years
+      
       dogAge = 21 + ((humanAge - 2)  * 4);
     }else{
       dogAge = humanAge * 10.5;
