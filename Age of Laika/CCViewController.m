@@ -26,4 +26,23 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)convert:(id)sender {
+  [self.humanAge resignFirstResponder];
+  
+  int humanAge;
+  float dogAge = 0;
+  
+  if ([self.humanAge.text isEqualToString:@""]) {
+    [[[UIAlertView alloc] initWithTitle:@"Oups" message:@"Please enter a human age" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Ok", nil] show];
+  }else{
+    humanAge = [self.humanAge.text intValue];
+    if (humanAge > 2) {
+      dogAge = 21 + ((humanAge - 2)  * 4);
+    }else{
+      dogAge = humanAge * 10.5;
+    }
+    
+    self.output.text = [NSString stringWithFormat:@"Laïka would have %.f years old", dogAge ];
+  }
+}
 @end

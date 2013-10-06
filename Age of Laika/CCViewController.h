@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface CCViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *humanAge;
+@property (weak, nonatomic) IBOutlet UILabel *output;
 
+- (IBAction)convert:(id)sender;
 @end

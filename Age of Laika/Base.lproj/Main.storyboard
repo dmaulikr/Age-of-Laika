@@ -1,23 +1,97 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4451" systemVersion="13A461" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3676"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="CCViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qs8-Yx-4PG"/>
+                        <viewControllerLayoutGuide type="bottom" id="eMr-du-hNv"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="laika.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5eo-aG-6dL">
+                                <rect key="frame" x="0.0" y="301" width="320" height="317"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type a human age" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iyQ-jf-aHD">
+                                <rect key="frame" x="65" y="141" width="191" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="EpU-OF-P5G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBp-D4-o2h">
+                                <rect key="frame" x="94" y="179" width="133" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="oNk-Gp-skc"/>
+                                </constraints>
+                                <state key="normal" title="Convert to dog age">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="convert:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RD7-n4-OMB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age of Laïka" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2F-k0-g8K">
+                                <rect key="frame" x="102" y="40" width="115" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="RXS-Tt-SL1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXI-mE-US1">
+                                <rect key="frame" x="20" y="244" width="279" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="T4v-mt-SUb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="U2F-k0-g8K" firstAttribute="centerX" secondItem="LXI-mE-US1" secondAttribute="centerX" id="2Ra-CB-gfh"/>
+                            <constraint firstItem="iyQ-jf-aHD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="65" id="7d7-UK-FSZ"/>
+                            <constraint firstItem="5eo-aG-6dL" firstAttribute="top" secondItem="LXI-mE-US1" secondAttribute="bottom" constant="36" id="8Z6-dq-CQ6"/>
+                            <constraint firstAttribute="bottom" secondItem="5eo-aG-6dL" secondAttribute="bottom" constant="-50" id="GfW-TW-7bo"/>
+                            <constraint firstItem="U2F-k0-g8K" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="40" id="Ihj-L5-g9e"/>
+                            <constraint firstItem="LXI-mE-US1" firstAttribute="top" secondItem="MBp-D4-o2h" secondAttribute="bottom" constant="35" id="PdF-X5-EOW"/>
+                            <constraint firstItem="MBp-D4-o2h" firstAttribute="top" secondItem="iyQ-jf-aHD" secondAttribute="bottom" constant="8" symbolic="YES" id="SLp-GK-IaH"/>
+                            <constraint firstAttribute="trailing" secondItem="5eo-aG-6dL" secondAttribute="trailing" id="Ygd-vB-HzA"/>
+                            <constraint firstItem="5eo-aG-6dL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="be3-Z3-wZH"/>
+                            <constraint firstItem="LXI-mE-US1" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="cqB-Fv-dlj"/>
+                            <constraint firstItem="iyQ-jf-aHD" firstAttribute="centerX" secondItem="MBp-D4-o2h" secondAttribute="centerX" id="hAt-pL-2bj"/>
+                            <constraint firstItem="iyQ-jf-aHD" firstAttribute="top" secondItem="U2F-k0-g8K" secondAttribute="bottom" constant="77" id="ivW-KU-yJu"/>
+                            <constraint firstAttribute="trailing" secondItem="LXI-mE-US1" secondAttribute="trailing" constant="21" id="oay-BZ-fcP"/>
+                            <constraint firstItem="MBp-D4-o2h" firstAttribute="centerX" secondItem="5eo-aG-6dL" secondAttribute="centerX" id="t3d-y4-Bpn"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="humanAge" destination="iyQ-jf-aHD" id="OOM-gO-uhf"/>
+                        <outlet property="output" destination="LXI-mE-US1" id="PdY-DQ-gsE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="laika.jpg" width="1024" height="768"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
