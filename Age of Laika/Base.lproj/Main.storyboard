@@ -16,26 +16,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="laika.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5eo-aG-6dL">
-                                <rect key="frame" x="0.0" y="301" width="320" height="317"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="laika.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5eo-aG-6dL">
+                                <rect key="frame" x="-1" y="268" width="320" height="300"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type a human age" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iyQ-jf-aHD">
                                 <rect key="frame" x="65" y="141" width="191" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="EpU-OF-P5G"/>
+                                    <constraint firstAttribute="height" constant="30" id="Qiw-Ys-vlx"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBp-D4-o2h">
-                                <rect key="frame" x="94" y="179" width="133" height="30"/>
+                                <rect key="frame" x="88" y="179" width="145" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="oNk-Gp-skc"/>
+                                    <constraint firstAttribute="height" constant="30" id="pQF-LN-8jJ"/>
                                 </constraints>
-                                <state key="normal" title="Convert to dog age">
+                                <state key="normal" title="Convert to dog years">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -46,17 +46,17 @@
                                 <rect key="frame" x="102" y="40" width="115" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="24" id="RXS-Tt-SL1"/>
+                                    <constraint firstAttribute="height" constant="24" id="HBw-ts-2sK"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXI-mE-US1">
-                                <rect key="frame" x="20" y="244" width="279" height="21"/>
+                                <rect key="frame" x="21" y="217" width="279" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="T4v-mt-SUb"/>
+                                    <constraint firstAttribute="height" constant="21" id="oef-6P-OlK"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -64,25 +64,25 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="U2F-k0-g8K" firstAttribute="centerX" secondItem="LXI-mE-US1" secondAttribute="centerX" id="2Ra-CB-gfh"/>
-                            <constraint firstItem="iyQ-jf-aHD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="65" id="7d7-UK-FSZ"/>
-                            <constraint firstItem="5eo-aG-6dL" firstAttribute="top" secondItem="LXI-mE-US1" secondAttribute="bottom" constant="36" id="8Z6-dq-CQ6"/>
-                            <constraint firstAttribute="bottom" secondItem="5eo-aG-6dL" secondAttribute="bottom" constant="-50" id="GfW-TW-7bo"/>
-                            <constraint firstItem="U2F-k0-g8K" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="40" id="Ihj-L5-g9e"/>
-                            <constraint firstItem="LXI-mE-US1" firstAttribute="top" secondItem="MBp-D4-o2h" secondAttribute="bottom" constant="35" id="PdF-X5-EOW"/>
-                            <constraint firstItem="MBp-D4-o2h" firstAttribute="top" secondItem="iyQ-jf-aHD" secondAttribute="bottom" constant="8" symbolic="YES" id="SLp-GK-IaH"/>
-                            <constraint firstAttribute="trailing" secondItem="5eo-aG-6dL" secondAttribute="trailing" id="Ygd-vB-HzA"/>
-                            <constraint firstItem="5eo-aG-6dL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="be3-Z3-wZH"/>
-                            <constraint firstItem="LXI-mE-US1" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="cqB-Fv-dlj"/>
-                            <constraint firstItem="iyQ-jf-aHD" firstAttribute="centerX" secondItem="MBp-D4-o2h" secondAttribute="centerX" id="hAt-pL-2bj"/>
-                            <constraint firstItem="iyQ-jf-aHD" firstAttribute="top" secondItem="U2F-k0-g8K" secondAttribute="bottom" constant="77" id="ivW-KU-yJu"/>
-                            <constraint firstAttribute="trailing" secondItem="LXI-mE-US1" secondAttribute="trailing" constant="21" id="oay-BZ-fcP"/>
-                            <constraint firstItem="MBp-D4-o2h" firstAttribute="centerX" secondItem="5eo-aG-6dL" secondAttribute="centerX" id="t3d-y4-Bpn"/>
+                            <constraint firstItem="LXI-mE-US1" firstAttribute="top" secondItem="MBp-D4-o2h" secondAttribute="bottom" constant="8" id="378-E8-ktx"/>
+                            <constraint firstItem="U2F-k0-g8K" firstAttribute="top" secondItem="Qs8-Yx-4PG" secondAttribute="bottom" constant="20" id="9Jf-oD-1Mf"/>
+                            <constraint firstItem="MBp-D4-o2h" firstAttribute="top" secondItem="iyQ-jf-aHD" secondAttribute="bottom" constant="8" symbolic="YES" id="Did-6f-1J3"/>
+                            <constraint firstItem="iyQ-jf-aHD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="65" id="Ede-EA-rav"/>
+                            <constraint firstAttribute="bottom" secondItem="5eo-aG-6dL" secondAttribute="bottom" id="IdR-na-TpE"/>
+                            <constraint firstItem="U2F-k0-g8K" firstAttribute="centerX" secondItem="LXI-mE-US1" secondAttribute="centerX" constant="-1" id="RyK-NU-3Pc"/>
+                            <constraint firstItem="LXI-mE-US1" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="21" id="dIC-kK-pcB"/>
+                            <constraint firstItem="iyQ-jf-aHD" firstAttribute="top" secondItem="U2F-k0-g8K" secondAttribute="bottom" constant="77" id="guR-Xu-ZM2"/>
+                            <constraint firstItem="5eo-aG-6dL" firstAttribute="top" secondItem="LXI-mE-US1" secondAttribute="bottom" constant="30" id="hny-K1-UUh"/>
+                            <constraint firstItem="5eo-aG-6dL" firstAttribute="centerX" secondItem="LXI-mE-US1" secondAttribute="centerX" constant="-1.5" id="kMm-7w-cks"/>
+                            <constraint firstItem="5eo-aG-6dL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="-1" id="pso-33-KxU"/>
+                            <constraint firstItem="MBp-D4-o2h" firstAttribute="centerX" secondItem="iyQ-jf-aHD" secondAttribute="centerX" id="rkI-Zj-tg9"/>
+                            <constraint firstItem="MBp-D4-o2h" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="vSM-Zq-CCt"/>
+                            <constraint firstAttribute="trailing" secondItem="5eo-aG-6dL" secondAttribute="trailing" constant="1" id="wzV-E8-P1d"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="humanAge" destination="iyQ-jf-aHD" id="OOM-gO-uhf"/>
-                        <outlet property="output" destination="LXI-mE-US1" id="PdY-DQ-gsE"/>
+                        <outlet property="dogYearsLabel" destination="LXI-mE-US1" id="uJi-5S-kLa"/>
+                        <outlet property="humanYearsLabel" destination="iyQ-jf-aHD" id="dpP-eO-ngt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

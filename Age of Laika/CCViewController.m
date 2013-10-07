@@ -27,26 +27,33 @@
 }
 
 - (IBAction)convert:(id)sender {
-  [self.humanAge resignFirstResponder];
+  [self.humanYearsLabel resignFirstResponder];
   
-  int humanAge;
-  float dogAge = 0;
+  // Declare a variable named humanYears of type int
+  int humanYears;
   
-  if ([self.humanAge.text isEqualToString:@""]) {
+  // Declare a variable named dogYears of type float   
+  float dogYears = 0;  
+  
+  // Check if the textfield isn't empty
+  if ([self.humanYearsLabel.text isEqualToString:@""]) {
+    // if empty show an error message
     [[[UIAlertView alloc] initWithTitle:@"Oups" message:@"Please enter a human age" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Ok", nil] show];
   }else{
-    humanAge = [self.humanAge.text intValue];
-    if (humanAge > 2) {
-      
-      // 10.5 years per human years for the first 2 years and 4 years for the rest
-      // for instance 3 human years = (21 + ((3 - 2) * 4)) = 25 dog years
-      
-      dogAge = 21 + ((humanAge - 2)  * 4);
+    // else get back the textfield content as integer, store it ti the local
+    // humanYears variable
+    humanYears = [self.humanYearsLabel.text intValue];
+    
+    // 10.5 years per human years for the first 2 years and 4 years for the rest
+    // for instance 3 human years = (21 + ((3 - 2) * 4)) = 25 dog years
+    if (humanYears > 2) {
+      dogYears = 21 + ((humanYears - 2)  * 4);
     }else{
-      dogAge = humanAge * 10.5;
+      dogYears = humanYears * 10.5;
     }
     
-    self.output.text = [NSString stringWithFormat:@"Laïka would have %.f years old", dogAge ];
+    // Update the label displaying the result of the conversion
+    self.dogYearsLabel.text = [NSString stringWithFormat:@"Laïka would be %.f years old", dogYears ];
   }
 }
 @end
