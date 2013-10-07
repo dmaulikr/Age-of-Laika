@@ -27,7 +27,7 @@
 }
 
 - (IBAction)convert:(id)sender {
-  [self.humanYearsLabel resignFirstResponder];
+  [self.humanYearsTextFields resignFirstResponder];
   
   // Declare a variable named humanYears of type int
   int humanYears;
@@ -36,13 +36,13 @@
   float dogYears = 0;  
   
   // Check if the textfield isn't empty
-  if ([self.humanYearsLabel.text isEqualToString:@""]) {
+  if ([self.humanYearsTextFields.text isEqualToString:@""]) {
     // if empty show an error message
-    [[[UIAlertView alloc] initWithTitle:@"Oups" message:@"Please enter a human age" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Ok", nil] show];
+    [[[UIAlertView alloc] initWithTitle:@"Years is empty" message:@"Please enter a years to be converted" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Ok", nil] show];
   }else{
     // else get back the textfield content as integer, store it ti the local
     // humanYears variable
-    humanYears = [self.humanYearsLabel.text intValue];
+    humanYears = [self.humanYearsTextFields.text intValue];
     
     // 10.5 years per human years for the first 2 years and 4 years for the rest
     // for instance 3 human years = (21 + ((3 - 2) * 4)) = 25 dog years

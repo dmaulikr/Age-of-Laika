@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface CCViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UITextField *humanYearsLabel;
+@property (weak, nonatomic) IBOutlet UITextField *humanYearsTextFields;
 @property (weak, nonatomic) IBOutlet UILabel *dogYearsLabel;
 
 - (IBAction)convert:(id)sender;
